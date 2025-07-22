@@ -1,8 +1,8 @@
 package org.example.models;
 
 import jakarta.persistence.*;
-import org.example.dto.DonorTypeEnum;
-import org.example.dto.StatusEnum;
+import org.example.enums.DonorTypeEnum;
+import org.example.enums.StatusEnum;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

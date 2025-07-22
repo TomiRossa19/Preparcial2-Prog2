@@ -1,7 +1,6 @@
 package org.example.models;
 
 import jakarta.persistence.*;
-import org.example.dto.DonorTypeEnum;
 
 import java.time.LocalDate;
 
