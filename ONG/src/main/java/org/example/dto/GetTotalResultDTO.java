@@ -6,10 +6,10 @@ import java.math.BigDecimal;
 
 public class GetTotalResultDTO {
     public DonorTypeEnum donorType;
-    public Integer donationQuantity;
+    public Long donationQuantity;
     public BigDecimal totalAmount;
 
-    public GetTotalResultDTO(DonorTypeEnum donorType, Integer donationQuantity, BigDecimal totalAmount) {
+    public GetTotalResultDTO(DonorTypeEnum donorType, Long donationQuantity, BigDecimal totalAmount) {
         this.donorType = donorType;
         this.donationQuantity = donationQuantity;
         this.totalAmount = totalAmount;
@@ -19,7 +19,7 @@ public class GetTotalResultDTO {
         this.donorType = donorType;
     }
 
-    public void setDonationQuantity(Integer donationQuantity) {
+    public void setDonationQuantity(Long donationQuantity) {
         this.donationQuantity = donationQuantity;
     }
 
@@ -31,11 +31,12 @@ public class GetTotalResultDTO {
         return donorType;
     }
 
-    public Integer getDonationQuantity() {
+    public Long getDonationQuantity() {
         return donationQuantity;
     }
 
     public BigDecimal getTotalAmount() {
         return totalAmount;
     }
+
 }
