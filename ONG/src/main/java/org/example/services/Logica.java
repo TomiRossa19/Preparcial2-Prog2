@@ -25,9 +25,9 @@ public class Logica {
 
     }
 
-    public Logica getInstance(){
+    public static Logica getInstance(){
         if (instance == null){
-            return new Logica();
+            instance = new Logica();
         }
         return instance;
     }
