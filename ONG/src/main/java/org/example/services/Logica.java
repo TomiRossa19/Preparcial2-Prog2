@@ -50,7 +50,9 @@ public class Logica {
                 return false;
             }else if (donation.getStatus() == StatusEnum.RECEIVED){
                 DonationAssignment donationAssignment = new DonationAssignment(assignDonationDTO.getDonationID(), assignDonationDTO.getNotes(), assignDonationDTO.getAssignationDate());
+                donation.setStatus(StatusEnum.ASSIGNED);
                 session.beginTransaction();
+                session.merge(donation);
                 session.persist(donationAssignment);
                 session.getTransaction().commit();
                 return true;
